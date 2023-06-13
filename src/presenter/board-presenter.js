@@ -4,7 +4,7 @@ import PointsListView from '../view/list-points-view.js';
 import SortingView from '../view/sort-view.js';
 import NoPointView from '../view/no-point-view.js';
 import LoadingView from '../view/loading-view.js';
-import NoAddInfoView from '../view/no-add-info-view.js';
+import NoAddInfoView from '../view/no-info-view.js';
 import PointPresenter from './point-presenter.js';
 import PointNewPresenter from './new-point-presenter.js';
 import { sorting } from '../utils/sort.js';

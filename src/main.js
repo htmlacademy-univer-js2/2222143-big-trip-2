@@ -1,16 +1,17 @@
-import { render } from './framework/render.js';
 import FilterPresenter from './presenter/filter-presenter.js';
 import BoardPresenter from './presenter/board-presenter.js';
 import ButtonPointPresenter from './presenter/button-point-presenter.js';
-import SiteMenuView from './view/menu-site-view.js';
+import { END_POINT, AUTHORIZATION } from './const.js';
+import { render } from './framework/render.js';
 import PointsModel from './model/point-model.js';
 import FilterModel from './model/filters-model.js';
 import DestinationsModel from './model/destinations-model.js';
 import OffersModel from './model/offer-model.js';
+import SiteMenuView from './view/menu-site-view.js';
 import PointsApiService from './api-service/points-api-service.js';
 import DestinationsApiService from './api-service/destinations-api-service.js';
 import OffersApiService from './api-service/offers-api-service.js';
-import { END_POINT, AUTHORIZATION } from './const.js';
+
 
 const siteHeaderElement = document.querySelector('.trip-main');
 const siteMainElement = document.querySelector('.page-main');
