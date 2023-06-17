@@ -7,7 +7,7 @@ import LoadingView from '../view/loading-view.js';
 import NoAddInfoView from '../view/no-add-info-view.js';
 import PointPresenter from './point-presenter.js';
 import PointNewPresenter from './new-point-presenter.js';
-import { sorting } from '../utils/sort.js';
+import { sorting } from '../utils/sorting.js';
 import { filter } from '../utils/filter.js';
 import { UpdateType, UserAction, SortType, FilterType, TimeLimit } from '../const.js';
 import TripInfoPresenter from './info-trip-presenter.js';
