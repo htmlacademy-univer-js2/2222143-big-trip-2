@@ -1,7 +1,7 @@
 import { render } from './framework/render.js';
 import FilterPresenter from './presenter/filter-presenter.js';
 import BoardPresenter from './presenter/board-presenter.js';
-import ButtonPointPresenter from './presenter/button-point-presenter.js';
+import NewPointButtonPresenter from './presenter/button-point-presenter.js';
 import SiteMenuView from './view/menu-site-view.js';
 import PointsModel from './model/point-model.js';
 import FilterModel from './model/filters-model.js';
@@ -39,19 +39,19 @@ const boardPresenter = new BoardPresenter({
 });
 boardPresenter.init();
 
-const buttonPointPresenter = new ButtonPointPresenter({
-  buttonPointContainer: siteHeaderElement,
+const newPointButtonPresenter = new NewPointButtonPresenter({
+  newPointButtonContainer: siteHeaderElement,
   destinationsModel: destinationsModel,
   pointsModel: pointsModel,
   offersModel: offersModel,
   boardPresenter: boardPresenter
 });
-buttonPointPresenter.init();
+newPointButtonPresenter.init();
 
 offersModel.init().finally(() => {
   destinationsModel.init().finally(() => {
     pointsModel.init().finally(() => {
-      buttonPointPresenter.renderButtonPoint();
+      newPointButtonPresenter.renderNewPointButton();
     });
   });
 });
